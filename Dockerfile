@@ -6,7 +6,7 @@ RUN adduser -u 9000 -D app
 VOLUME /code
 
 # Increase Java memory limits
-ENV JAVA_OPTS="-XX:+UseParNewGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -Xss4096k"
+ENV JAVA_OPTS="-XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -Xss4096k"
 
 ENV GRADLE_VERSION=4.2.1
 ENV GRADLE_HOME=/opt/gradle
