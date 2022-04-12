@@ -14,7 +14,7 @@ public class SanityCheckTest {
     public void executeJavaLibFixture() throws Exception {
         String expectedOutput = File.read("src/test/resources/sanity_check_expected_issues.json");
 
-        Shell.Process process = Shell.execute("build/codeclimate-sonar -e fixtures/java_lib");
+        Shell.Process process = Shell.execute("build/codeclimate-sonar -x fixtures/java_lib");
 
         assertThat(process.exitCode).isEqualTo(0);
         assertThat(process.stdout)
