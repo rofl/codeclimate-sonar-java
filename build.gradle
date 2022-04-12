@@ -36,7 +36,7 @@ dependencies {
     compile("com.github.codeclimate:codeclimate-ss-analyzer-wrapper:master-SNAPSHOT")
 
     // Plugins
-    compile("org.sonarsource.java:sonar-java-plugin:4.14.0.11784")
+    compile("org.sonarsource.java:sonar-java-plugin:7.11.0.29148")
 
     testCompile("org.assertj:assertj-core:2.8.0")
     testCompile("org.skyscreamer:jsonassert:1.5.0")
