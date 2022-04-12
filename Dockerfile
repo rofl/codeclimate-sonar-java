@@ -1,8 +1,8 @@
-FROM openjdk:11-jdk-slim
+FROM adoptopenjdk/openjdk11:jdk-11.0.14.1_1-alpine
 
 MAINTAINER Code Climate
 
-RUN adduser -u 9000 --disabled-login app
+RUN adduser -u 9000 -D app
 VOLUME /code
 
 # Increase Java memory limits
