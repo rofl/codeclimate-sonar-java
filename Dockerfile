@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-alpine
+FROM openjdk:11-jdk-slim
 
 MAINTAINER Code Climate
 
@@ -8,7 +8,7 @@ VOLUME /code
 # Increase Java memory limits
 ENV JAVA_OPTS="-XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -Xss4096k"
 
-ENV GRADLE_VERSION=7.4.2
+ENV GRADLE_VERSION=5.6.4
 ENV GRADLE_HOME=/opt/gradle
 ENV GRADLE_FOLDER=$GRADLE_HOME
 ENV GRADLE_USER_HOME=$GRADLE_HOME
