@@ -2,6 +2,7 @@ version: 2.1
 
 jobs:
   build:
+    machine: true
     working_directory: ~/codeclimate/codeclimate-sonar-java
     steps:
       - checkout
